@@ -1,0 +1,138 @@
+.container {
+  width: 100%;
+  max-width: 1302px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @media (max-width: $vp-1023) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &--header {
+    min-height: 120px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $vp-1023) {
+      min-height: 100px;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: $vp-767) {
+      min-height: 70px;
+      padding-top: 10px;
+    }
+  }
+
+  &--main-screen {
+    min-height: 760px;
+    padding: 185px 164px 200px;
+    margin-bottom: 120px;
+
+    @media (max-width: $vp-1023) {
+      min-height: 540px;
+      margin-bottom: 80px;
+      padding-top: 80px;
+    }
+
+    @media (max-width: $vp-767) {
+      min-height: 490px;
+      margin-bottom: 50px;
+      padding-bottom: 80px;
+    }
+  }
+
+  &--features {
+    margin-bottom: 120px;
+
+    @media (max-width: $vp-1023) {
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: $vp-767) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &--about {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 100px;
+
+    @media (max-width: $vp-1023) {
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: $vp-767) {
+      display: block;
+      margin-bottom: 78px;
+    }
+  }
+
+  &--product {
+    padding-top: 68px;
+    padding-bottom: 140px;
+
+    @media (max-width: $vp-1023) {
+      padding-top: 58px;
+      padding-bottom: 44px;
+    }
+
+    @media (max-width: $vp-767) {
+      padding-top: 48px;
+      padding-bottom: 58px;
+    }
+  }
+
+  &--question {
+    padding-top: 168px;
+    padding-bottom: 246px;
+    display: grid;
+    grid-template-columns: auto 595px;
+    gap: 115px;
+    align-items: center;
+
+    @media (max-width: $vp-1023) {
+      display: block;
+      padding-top: 48px;
+      padding-bottom: 124px;
+    }
+
+    @media (max-width: $vp-767) {
+      padding-bottom: 89px;
+    }
+  }
+
+  &--footer {
+    padding-top: 52px;
+    padding-bottom: 55px;
+    display: grid;
+    grid-template-columns: 28% auto 28.3%;
+    grid-template-areas: "icons navigation contacts";
+    gap: 35px;
+
+    @media (max-width: $vp-1023) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "icons icons"
+        "navigation contacts";
+      gap: 30px;
+    }
+
+    @media (max-width: $vp-767) {
+      display: block;
+      padding-top: 36px;
+      padding-bottom: 35px;
+    }
+  }
+}

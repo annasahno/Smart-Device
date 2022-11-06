@@ -1,0 +1,39 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  @media (max-width: $vp-767) {
+    justify-content: center;
+  }
+}
+
+.social__item {
+  margin-left: 13px;
+
+  @media (max-width: $vp-1023) {
+    margin-top: 4px;
+    margin-left: 15px;
+    position: relative;
+    right: -5px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin: 0 8px;
+    position: static;
+  }
+}
+
+.social__link {
+  padding: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social__icon {
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

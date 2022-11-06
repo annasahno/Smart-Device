@@ -1,0 +1,28 @@
+.footer-contact {
+  @media (max-width: $vp-767) {
+    padding-bottom: 8px;
+  }
+}
+
+.footer-contact__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-contact__item {
+  margin-bottom: 9px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 11px;
+    font-size: 14px;
+
+    &--address {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.footer-contact__address {
+  margin: 0;
+}

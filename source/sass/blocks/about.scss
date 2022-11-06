@@ -1,0 +1,61 @@
+.about h2 {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: $ff-secondary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.4;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 28px;
+  }
+}
+
+.about p {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+  }
+}
+
+.about img {
+  margin-right: 100px;
+
+  @media (max-width: $vp-1023) {
+    margin-right: 25px;
+    position: relative;
+    left: -4px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+[data-about-text="close-desktop"].is-close {
+  display: none;
+}
+
+[data-about-text="close-phone"].is-close {
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.no-js .is-close {
+  display: block;
+}
+
+.no-js [data-about-toggle] {
+  display: none;
+}
