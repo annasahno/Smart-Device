@@ -83,6 +83,11 @@
   font-size: 14px;
   line-height: 1.1;
 
+  &:focus-within {
+    outline: 2px solid $color-black-pearl;
+    border-radius: 3px;
+  }
+
   @media (max-width: $vp-1023) {
     margin-top: 12px;
     padding-left: 25px;
