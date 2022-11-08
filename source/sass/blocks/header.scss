@@ -4,6 +4,10 @@
   z-index: 100;
   color: $color-default-white;
   background: linear-gradient(to bottom, $color-black-pearl 85%, $color-transparent);
+
+  @media (max-width: $vp-1023) {
+    position: static;
+  }
 }
 
 .header__logo {
