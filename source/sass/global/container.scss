@@ -116,12 +116,11 @@
   &--footer {
     padding-top: 52px;
     padding-bottom: 55px;
-    display: grid;
-    grid-template-columns: 268px auto minmax(3%, 30%);
-    grid-template-areas: "icons navigation contacts";
     justify-content: space-between;
+    display: flex;
 
     @media (max-width: $vp-1023) {
+      display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
         "icons icons"
