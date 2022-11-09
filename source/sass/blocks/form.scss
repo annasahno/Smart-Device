@@ -161,8 +161,10 @@ input[type="checkbox"]:checked + label span {
 }
 
 .form--modal {
-  display: block;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
 }
 
 .form--modal input,
