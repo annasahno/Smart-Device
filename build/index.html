@@ -8,8 +8,8 @@
   <meta name="description" content="Описание проекта">
   <title>Smart Device</title>
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font">
-  <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
 </head>
@@ -53,7 +53,7 @@
     </header>
 
     <main>
-      <h1 class="visually-hidden">Компания по&nbsp;производству &nbsp; монтажу печатных плат Smart Device</h1>
+      <h1 class="visually-hidden">Компания по&nbsp;производству и&nbsp; монтажу печатных плат Smart Device</h1>
 
       <section class="main-screen">
         <div class="container container--main-screen">
@@ -87,20 +87,20 @@
               <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
                 Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--small">
               <svg aria-hidden="true" focusable="false" width="35" height="35">
                 <use xlink:href="img/sprite_auto.svg#detective"></use>
               </svg>
               <h3>Полная конфиденциальность</h3>
               <p>По&nbsp;желанию клиента мы обеспечиваем полную конфиденциальность.</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--small">
               <svg aria-hidden="true" focusable="false" width="35" height="35">
                 <use xlink:href="img/sprite_auto.svg#tag"></use>
               </svg>
               <h3>Персонализация стоимости</h3>
-              <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
-                установить ту&nbsp;цену, которая Вас устраивает.</p>
+              <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая
+                Вас устраивает.</p>
             </li>
           </ul>
         </div>
@@ -203,23 +203,23 @@
 
             <form class="question__form form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
               <label class="visually-hidden" for="name">Введите имя</label>
-              <input type="text" id="name" name="name" placeholder="Имя" pattern="^[А-Яа-яЁёa-zA-Z\s]+$" maxlength="100"
-                title="Разрешено использовать только буквы и пробелы" required>
+              <input type="text" id="name" name="name" placeholder="Имя" pattern="^[А-Яа-яЁёa-zA-Z\-\s]+$"
+                maxlength="100" title="Разрешено использовать только буквы, пробелы и дефис" required>
 
               <label class="visually-hidden" for="tel">Введите номер телефона</label>
-              <input type="tel" id="tel" name="tel" placeholder="Телефон" maxlength="18" pattern="\+?[0-9\s\-\(\)]+"
-                title="Разрешено использовать только цифры" required>
+              <input type="tel" id="tel" name="tel" placeholder="Телефон" maxlength="18"
+                pattern="^\+7\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}$" title="Введите 10 цифр" required>
 
               <label class="visually-hidden" for="question">Введите ваш вопрос</label>
               <textarea id="question" name="question" cols="10" rows="6" placeholder="Ваш вопрос"
                 maxlength="1000"></textarea>
 
-              <button class="btn form__button" type="submit">Задать вопрос</button>
-
               <div class="form__checkbox">
                 <input type="checkbox" id="сonsent" name="сonsent" required checked>
                 <label for="сonsent"><span></span>Я согласен на&nbsp;обработку персональных данных</label>
               </div>
+
+              <button class="btn form__button" type="submit">Задать вопрос</button>
             </form>
           </div>
         </div>
@@ -324,18 +324,16 @@
           <form class="question__form form form--modal" action="https://echo.htmlacademy.ru/" method="post"
             autocomplete="off">
             <label class="visually-hidden" for="modal-name">Введите имя</label>
-            <input type="text" id="modal-name" name="name" placeholder="Имя" pattern="^[А-Яа-яЁёa-zA-Z\s]+$"
-              maxlength="100" title="Разрешено использовать только буквы и пробелы" data-focus required>
+            <input type="text" id="modal-name" name="name" placeholder="Имя" pattern="^[А-Яа-яЁёa-zA-Z\-\s]+$"
+              maxlength="100" title="Разрешено использовать только буквы, пробелы и дефис" data-focus required>
 
             <label class="visually-hidden" for="modal-tel">Введите номер телефона</label>
-            <input type="tel" id="modal-tel" name="tel" placeholder="Телефон" maxlength="18" pattern="\+?[0-9\s\-\(\)]+"
-              title="Разрешено использовать только цифры" required>
+            <input type="tel" id="modal-tel" name="tel" placeholder="Телефон" maxlength="18"
+              pattern="^\+7\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}$" title="Введите 10 цифр" required>
 
             <label class="visually-hidden" for="modal-question">Введите ваш вопрос</label>
             <textarea id="modal-question" name="question" cols="10" rows="6" placeholder="Ваш вопрос"
               maxlength="1000"></textarea>
-
-            <button class="btn form__button" type="submit">Отправить</button>
 
             <div class="form__checkbox form__checkbox--modal">
               <input class="visually-hidden" type="checkbox" id="modal-сonsent" name="сonsent" required checked>
@@ -344,6 +342,8 @@
                 Я согласен на&nbsp;обработку персональных данных
               </label>
             </div>
+
+            <button class="btn form__button" type="submit">Отправить</button>
           </form>
         </div>
       </div>

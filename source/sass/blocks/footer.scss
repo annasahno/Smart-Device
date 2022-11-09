@@ -66,6 +66,11 @@
 
 .footer__contacts {
   grid-area: contacts;
+  margin-left: 20px;
+
+  @media (max-width: $vp-1023) {
+    margin-left: 0;
+  }
 }
 
 .footer__list {
@@ -73,9 +78,10 @@
   padding: 0;
   display: grid;
   grid-template-rows: repeat(4, min-content);
-  grid-template-columns: repeat(auto-fill, max(220px));
+  grid-template-columns: repeat(auto-fill, minmax(auto, 220px));
   grid-auto-flow: column;
   gap: 8px 30px;
+  justify-content: space-between;
   list-style: none;
 
   @media (max-width: $vp-1023) {
