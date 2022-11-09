@@ -1782,6 +1782,7 @@ input[type=checkbox]:checked + label span::after {
     display: block;
     width: auto;
     max-width: 220px;
+    margin-right: 0;
   }
 
   .footer__item {
